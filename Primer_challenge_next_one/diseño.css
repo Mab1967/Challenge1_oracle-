@@ -1,0 +1,82 @@
+* {
+    box-sizing: border-box;
+  }
+
+body {
+    width: 100%;
+    display: block;
+    margin: 0;
+    min-height: 93vh;
+    background: #4fdb8a;
+    font-family:'Times New Roman', Times, serif;
+    color: blue;
+    text-shadow: #444343 0 0 .09em;
+}
+
+.titulo_principal {
+    color: blue;
+    font-size: 60px;
+    text-transform: capitalize;
+    text-align: center;
+    display: block;
+}
+
+.formularios {
+    width: 60vw;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    flex: 1 1 100px;
+}
+
+.form_encriptar,
+.form-desencriptar {
+    margin: 30px;
+}
+
+#entrada_texto, #salida_texto {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 14px;
+    color: blue;
+    background-color: ligthgrey;
+    border: 3px solid blue;
+}
+
+.formularios button {
+    align-items: center;
+    border-radius: 20px;
+    padding: 5px 5px 5px 5px;
+    margin-top: 10px;
+    box-shadow: 20px 0px 30px -5px #5a5959;
+    border: 2px solid rgb(95, 14, 133);
+    background-color: blue;
+    color: #4fdb9a;
+    cursor: pointer;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 16px;
+}
+
+.formularios label {
+    text-align: center;
+}
+
+.boton_izquierdo {
+    margin-left: 100px;
+}
+
+.boton_derecho {
+    margin-left: 10px;
+}
+
+.derechos {
+    padding: 1pxS;
+    background-color: rgb(95, 14, 133);
+    color: white;
+	font-size: 14px;
+    text-align: center;
+    width: 100%;
+    max-width: 100%;
+    position: fixed;
+    bottom: 0;
+}
