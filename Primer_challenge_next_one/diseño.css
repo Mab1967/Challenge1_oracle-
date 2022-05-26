@@ -7,10 +7,11 @@ body {
     display: block;
     margin: 0;
     min-height: 93vh;
-    background: #4fdb8a;
+    background-image: url("fondo.jpg");
     font-family:'Times New Roman', Times, serif;
-    color: blue;
-    text-shadow: #444343 0 0 .09em;
+    font-size: 25px;
+    color: #e3e3e3;
+    text-shadow: #3b2323 0 0 .15em;
 }
 
 .titulo_principal {
@@ -21,8 +22,22 @@ body {
     display: block;
 }
 
+/*------------------------------------------Animación de título*/
+.titulo_principal {
+        animation-name            : displaceContent;
+        animation-duration        : 1.3s;
+        animation-delay           : 0.5s;
+        animation-iteration-count : 1;
+        animation-fill-mode       : forwards;
+    }
+
+    @keyframes displaceContent {
+        from { transform : translateY(3em) }
+        to   { transform : translateY(0em) } 
+    }
+
 .formularios {
-    width: 60vw;
+    width: 90vw;
     margin: auto;
     display: flex;
     justify-content: center;
@@ -69,9 +84,14 @@ body {
     margin-left: 10px;
 }
 
+.boton_derecho:hover, .boton_izquierdo:hover {
+    background: darkblue;
+    transform: scale(1.2);
+}
+
 .derechos {
     padding: 1pxS;
-    background-color: rgb(95, 14, 133);
+    background-color: blue;
     color: white;
 	font-size: 14px;
     text-align: center;
